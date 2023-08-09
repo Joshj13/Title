@@ -1,3 +1,4 @@
+// app.js
 const userList = document.getElementById('userList');
 const nameInput = document.getElementById('nameInput');
 const submitButton = document.getElementById('submit');
@@ -26,7 +27,7 @@ function submitName() {
 }
 
 function populateDivs(name) {
-    userList.innerHTML = ''; // Clear the previous content, if any
+    userList.innerHTML = ''; // Clear the previous content
 
     for (let i = 0; i < name.length; i++) {
         const character = name[i];
@@ -50,5 +51,5 @@ function populateDivs(name) {
     }
     
     // Adjust the margin-left of userList
-    userList.style.marginLeft = '56px'; // Adjust the value as needed
+    userList.style.marginLeft = '20px'; // Adjust the value as needed
 }
